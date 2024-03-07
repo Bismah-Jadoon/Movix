@@ -5,6 +5,7 @@ function App() {
   useEffect(() => {
     apiTesting();
   }, []);
+  
 
   const apiTesting = () => {
     fetchDataFromApi('/movie/popular').then((res) => {
