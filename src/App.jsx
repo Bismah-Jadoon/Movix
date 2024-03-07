@@ -12,7 +12,6 @@ function App() {
       console.log(res);
     });
   };
-  
   return <div className="App">App</div>;
 
 }
