@@ -5,7 +5,10 @@ import { fetchDataFromApi } from "./utils/api";
 function App() {
 
   const apiTesting = () => {
-    fetchDataFromApi('')
+    fetchDataFromApi('/movie/popular')
+    .then((res) => {
+      console.log(res)
+    })
   }
   return <div className="App">App</div>;
 }
