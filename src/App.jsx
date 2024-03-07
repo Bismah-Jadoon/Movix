@@ -5,7 +5,7 @@ function App() {
   useEffect(() => {
     apiTesting();
   }, []);
-  
+
 
   const apiTesting = () => {
     fetchDataFromApi('/movie/popular').then((res) => {
@@ -13,6 +13,7 @@ function App() {
     });
   };
   return <div className="App">App</div>;
+  
 }
 
 export default App;
