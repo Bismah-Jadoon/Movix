@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { fetchDataFromApi } from "./utils/api";
 import { useSelector, useDispatch } from 'react-redux'
 import { getApiConfiguration } from "./store/homeSlice";
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
@@ -27,10 +28,16 @@ function App() {
     });
   };
 
-  return <div className="App">App
-  
-  {url?.total_pages} 
-  </div>;
+  return (<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home/>}/>
+    <Route path="/:mediaType/:id" element={<Details/>}/>
+    <Route path="/search/:query" element={<SearchResult/>}/>
+    <Route path="/explore/:mediaType" element={<Explore/>}/>
+    <Route path="*" element={<pageNotFound/>}/>
+
+  </Routes>
+  </BrowserRouter>);
 }
 
 export default App;

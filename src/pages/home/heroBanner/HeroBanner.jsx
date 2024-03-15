@@ -2,5 +2,5 @@ import React from "react";
 import "./style.scss";
 
 export default function HeroBanner() {
-  return <div></div>;
+  return <div>HeroBanner</div>;
 }
