@@ -1,9 +1,13 @@
 import React from 'react'
+import "./style.scss";
 
-export default function footer() {
+function Footer() {
   return (
     <div>
-      
+      Footer
     </div>
   )
 }
+
+export default Footer
+
