@@ -1,9 +1,6 @@
-import React from 'react'
+import React from "react";
+import "./style.scss";
 
-export default function header() {
-  return (
-    <div>
-      
-    </div>
-  )
+export default function Header() {
+  return <div>Header</div>;
 }
