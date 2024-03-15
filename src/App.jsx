@@ -20,7 +20,7 @@ function App() {
   };
 
   return <div className="App">App
-  {url?.total_pages}
+  {url?.total_pages} 
   </div>;
 }
 
