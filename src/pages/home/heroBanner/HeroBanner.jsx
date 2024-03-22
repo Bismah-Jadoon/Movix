@@ -15,11 +15,3 @@ export default function HeroBanner() {
     </div>
   );
 }
-
-
-
-
-
-
-
-
