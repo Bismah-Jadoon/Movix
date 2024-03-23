@@ -11,7 +11,9 @@ export default function HeroBanner() {
              to discover.
             Explore now.</span>
 
-            
+            <div className="searchInput">
+              <input type="text" placeholder="Search for a movie or tv show...." />
+            </div>
         </div>
       </div>
     </div>
