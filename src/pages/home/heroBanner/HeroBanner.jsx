@@ -10,6 +10,8 @@ export default function HeroBanner() {
             <span className="subtitle">Millions of movies, TV shows and people
              to discover.
             Explore now.</span>
+
+            
         </div>
       </div>
     </div>
