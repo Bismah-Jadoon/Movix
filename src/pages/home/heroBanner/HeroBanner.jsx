@@ -1,11 +1,14 @@
 import React, {useState} from "react";
 import "./style.scss";
 import { useNavigate } from "react-router-dom";
+import useFetch from "../../../hooks/useFetch";
 
 export default function HeroBanner() {
    const [background, setBackground] = useState("");
    const [query, setQuery] = useState("");
    const navigate = useNavigate();
+
+   const {data, loading} = useFetch("/movie/upcoming")
 
   const searchQueryHandler = (event) => {
         if(event.key === "Enter" && query.length>0){
