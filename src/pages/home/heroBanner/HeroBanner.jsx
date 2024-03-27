@@ -1,13 +1,15 @@
 import React, {useState} from "react";
 import "./style.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function HeroBanner() {
    const [background, setBackground] = useState("");
    const [query, setQuery] = useState("");
+   const navigate = useNavigate();
 
   const searchQueryHandler = (event) => {
         if(event.key === "Enter" && query.length>0){
-          
+          navigate(`/search/${query}`)
         }
   }
 
