@@ -35,8 +35,7 @@ export default function HeroBanner() {
    </div>}
 
     <ContentWrapper>
-    <div className="wrapper">
-        <div className="heroBannerContent">
+              <div className="heroBannerContent">
             <span className="title">Welcome.</span>
             <span className="subtitle">Millions of movies, TV shows and people
              to discover.
@@ -47,7 +46,6 @@ export default function HeroBanner() {
               <button>Search</button>
             </div>
         </div>
-      </div>
     </ContentWrapper>
 
 
