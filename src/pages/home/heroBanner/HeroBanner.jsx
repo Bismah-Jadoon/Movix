@@ -12,7 +12,7 @@ export default function HeroBanner() {
    const {data, loading} = useFetch("/movie/upcoming")
 
   useEffect(() => {
-     const bg = url.backdrop + data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path
+     const bg = url.backdrop + data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path;
      setBackground(bg);
   }, [data])
 
@@ -25,6 +25,11 @@ export default function HeroBanner() {
 
   return(
     <div className="heroBanner">
+ 
+   <div className="backdrop_img">
+    
+   </div>
+
       <div className="wrapper">
         <div className="heroBannerContent">
             <span className="title">Welcome.</span>
