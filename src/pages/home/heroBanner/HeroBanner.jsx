@@ -26,8 +26,8 @@ export default function HeroBanner() {
   return(
     <div className="heroBanner">
  
-   <div className="backdrop_img">
-    
+   <div className="backdrop-img">
+
    </div>
 
       <div className="wrapper">
