@@ -11,8 +11,10 @@ export default function HeroBanner() {
    const {data, loading} = useFetch("/movie/upcoming")
 
   useEffect(() => {
-     const bg = data?.results[Math.floor(Math.random() * 20)].backdrop_path
+     const bg = data?.results?.[Math.floor(Math.random() * 20)]?.backdrop_path
+     setBackground(bg);
   }, [data])
+
 
   const searchQueryHandler = (event) => {
         if(event.key === "Enter" && query.length>0){
