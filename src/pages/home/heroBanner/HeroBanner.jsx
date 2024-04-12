@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import useFetch from "../../../hooks/useFetch";
 import {useSelector} from "react-redux"
 import Img from "../../../components/lazyLoadImage/Img";
-
+import ContentWrapper from "../../../components/contentWrapper/ContentWrapper"
 
 
 
@@ -31,7 +31,7 @@ export default function HeroBanner() {
     <div className="heroBanner">
  
    <div className="backdrop-img">
-
+      <Img src={background}/>
    </div>
 
       <div className="wrapper">
