@@ -30,11 +30,12 @@ export default function HeroBanner() {
   return(
     <div className="heroBanner">
  
-   <div className="backdrop-img">
+   {!loading && <div className="backdrop-img">
       <Img src={background}/>
-   </div>
+   </div>}
 
-      <div className="wrapper">
+    <ContentWrapper>
+    <div className="wrapper">
         <div className="heroBannerContent">
             <span className="title">Welcome.</span>
             <span className="subtitle">Millions of movies, TV shows and people
@@ -47,6 +48,10 @@ export default function HeroBanner() {
             </div>
         </div>
       </div>
+    </ContentWrapper>
+
+
+     
     </div>
   );
 }
