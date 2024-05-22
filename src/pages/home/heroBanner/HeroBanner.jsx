@@ -36,6 +36,12 @@ export default function HeroBanner() {
 
    <div className="opacity-layer">
     
+
+
+
+
+
+    
    </div>
 
     <ContentWrapper>
